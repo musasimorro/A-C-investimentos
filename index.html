@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        /* Animação que percorre exatamente o tamanho do conteúdo */
         @keyframes marquee {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
@@ -32,14 +31,12 @@
     <!-- WIDGET DE MERCADO EM LOOP CONTÍNUO -->
     <div class="bg-black border-y border-gray-800 overflow-hidden relative pt-24">
         <div class="whitespace-nowrap animate-marquee flex gap-12 py-3 text-sm text-gray-400 w-fit">
-            <!-- Grupo de itens (metade da animação) -->
             <span class="flex items-center gap-2"><span class="text-gold font-bold">IBOV</span> 128.500 <span class="text-emerald">+0.45%</span></span>
             <span class="flex items-center gap-2"><span class="text-gold font-bold">PETR4</span> 45.47 <span class="text-emerald">+1.04%</span></span>
             <span class="flex items-center gap-2"><span class="text-gold font-bold">VALE3</span> 83.50 <span class="text-emerald">+0.76%</span></span>
             <span class="flex items-center gap-2"><span class="text-gold font-bold">ITUB4</span> 39.70 <span class="text-red-500">-1.73%</span></span>
             <span class="flex items-center gap-2"><span class="text-gold font-bold">ABEV3</span> 13.20 <span class="text-emerald">+0.12%</span></span>
             <span class="flex items-center gap-2"><span class="text-gold font-bold">BBDC4</span> 15.80 <span class="text-red-500">-0.30%</span></span>
-            <!-- Cópia exata dos itens para preencher o vazio e fechar o loop -->
             <span class="flex items-center gap-2"><span class="text-gold font-bold">IBOV</span> 128.500 <span class="text-emerald">+0.45%</span></span>
             <span class="flex items-center gap-2"><span class="text-gold font-bold">PETR4</span> 45.47 <span class="text-emerald">+1.04%</span></span>
             <span class="flex items-center gap-2"><span class="text-gold font-bold">VALE3</span> 83.50 <span class="text-emerald">+0.76%</span></span>
@@ -60,13 +57,32 @@
         </div>
     </section>
 
-    <!-- NÚMEROS -->
+    <!-- NÚMEROS E DEPOIMENTOS -->
     <section id="numeros-section" class="bg-gray-900 py-20 px-6">
         <div class="max-w-6xl mx-auto">
             <div class="grid md:grid-cols-3 gap-12 mb-20 text-center">
                 <div><h4 class="text-5xl font-serif text-gold counter" data-target="87">0</h4><p>Operações Estruturadas</p></div>
                 <div><h4 class="text-5xl font-serif text-gold counter" data-target="1800">0</h4><p>Clientes Atendidos</p></div>
                 <div><h4 class="text-5xl font-serif text-gold counter" data-target="100" data-suffix=" MM">0</h4><p>Em Crédito Estruturado</p></div>
+            </div>
+
+            <h3 class="text-3xl font-serif text-white mb-12 text-center">O que dizem nossos clientes</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-dark p-8 border border-gray-800 rounded text-center">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-gold">
+                    <p class="italic text-sm mb-4">"A estruturação foi impecável. A A&C transformou nossa gestão financeira."</p>
+                    <h5 class="font-bold text-white">Ricardo Mendes</h5>
+                </div>
+                <div class="bg-dark p-8 border border-gray-800 rounded text-center">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-gold">
+                    <p class="italic text-sm mb-4">"Profissionalismo raro. Conseguimos o crédito que precisávamos com rapidez."</p>
+                    <h5 class="font-bold text-white">Ana Souza</h5>
+                </div>
+                <div class="bg-dark p-8 border border-gray-800 rounded text-center">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-gold">
+                    <p class="italic text-sm mb-4">"A melhor ponte estratégica entre nossa empresa e o mercado financeiro."</p>
+                    <h5 class="font-bold text-white">Carlos Lima</h5>
+                </div>
             </div>
         </div>
     </section>
