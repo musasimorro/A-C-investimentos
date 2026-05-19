@@ -10,17 +10,18 @@
             <a href="quem-somos.html" class="hover:text-white transition">Quem Somos</a>
             <a href="contato.html" class="text-white border-b border-gold">Contato</a>
         </nav>
-        <main class="flex-grow max-w-2xl mx-auto py-20 px-6 w-full">
+        <main class="flex-grow max-w-2xl mx-auto py-32 px-6">
             <h2 class="text-4xl font-serif text-white mb-10 text-center">Fale com um Especialista</h2>
-            <form id="contactForm" class="space-y-6">
-                <input type="text" id="nome" placeholder="Nome" class="w-full bg-black/50 p-4 border border-gray-700 text-white">
-                <input type="email" id="email" placeholder="E-mail" class="w-full bg-black/50 p-4 border border-gray-700 text-white">
-                <textarea id="mensagem" placeholder="Mensagem" class="w-full bg-black/50 p-4 border border-gray-700 text-white"></textarea>
-                <button type="button" onclick="enviarWhatsApp()" class="w-full bg-gold py-4 font-bold">Enviar</button>
+            <form id="contactForm" class="space-y-6 bg-gray-900/90 p-8 rounded border border-gray-800">
+                <input type="text" id="nome" placeholder="Nome" class="w-full bg-black p-4 border border-gray-700 text-white">
+                <input type="email" id="email" placeholder="E-mail" class="w-full bg-black p-4 border border-gray-700 text-white">
+                <input type="tel" id="telefone" placeholder="Telefone" class="w-full bg-black p-4 border border-gray-700 text-white">
+                <textarea id="mensagem" placeholder="Mensagem" class="w-full bg-black p-4 border border-gray-700 text-white h-32"></textarea>
+                <button type="button" onclick="enviarWhatsApp()" class="w-full bg-gold py-4 font-bold uppercase tracking-widest">Enviar Mensagem</button>
             </form>
         </main>
-        <footer class="py-10 text-center border-t border-gray-900 text-xs text-gray-600">&copy; 2026 Haubitz. | Desenvolvido por <a href="https://wa.me/5514991159546?text=Olá%20eu%20visitei%20o%20site%20A%26C%20Investimentos%20e%20queria%20saber%20como%20faço%20para%20ter%20meu%20próprio%20site" class="text-gold hover:underline">Haubitz</a></footer>
+        <footer class="py-10 text-center border-t border-gray-900 text-xs text-gray-600 bg-black/40">&copy; 2026 Haubitz. Todos os direitos reservados. | Desenvolvido por <a href="https://wa.me/5514991159546?text=Olá%20eu%20visitei%20o%20site%20A%26C%20Investimentos%20e%20queria%20saber%20como%20faço%20para%20ter%20meu%20próprio%20site" class="text-gold hover:underline">Haubitz</a></footer>
     </div>
-    <script>function enviarWhatsApp() { const nome = document.getElementById('nome').value; const mensagem = document.getElementById('mensagem').value; window.open(`https://wa.me/557199184444?text=Olá, sou ${nome}. ${mensagem}`, '_blank'); }</script>
+    <script>function enviarWhatsApp() { const n=document.getElementById('nome').value; const e=document.getElementById('email').value; const t=document.getElementById('telefone').value; const m=document.getElementById('mensagem').value; window.open(`https://wa.me/557199184444?text=Olá, sou ${n}. Email: ${e}. Tel: ${t}. Mensagem: ${m}`, '_blank'); }</script>
 </body>
 </html>
