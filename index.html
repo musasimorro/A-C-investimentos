@@ -17,15 +17,15 @@
 </head>
 <body class="bg-dark text-gray-300 font-sans selection:bg-gold selection:text-white">
 
-    <!-- MENU -->
-    <nav class="absolute top-0 w-full z-50 p-8 flex justify-center gap-8 text-sm uppercase tracking-widest text-gold bg-gradient-to-b from-black/50 to-transparent">
-        <a href="index.html" class="text-white border-b border-gold">Início</a>
-        <a href="servicos.html" class="hover:text-white transition">Serviços</a>
-        <a href="quem-somos.html" class="hover:text-white transition">Quem Somos</a>
-        <a href="contato.html" class="hover:text-white transition">Contato</a>
+    <nav class="absolute top-0 w-full z-50 p-8 flex justify-between items-center px-12 text-sm uppercase tracking-widest text-gold bg-gradient-to-b from-black/50 to-transparent">
+        <div class="flex gap-8">
+            <a href="index.html" class="text-white border-b border-gold">Início</a>
+            <a href="quem-somos.html" class="hover:text-white transition">Quem Somos</a>
+            <a href="contato.html" class="hover:text-white transition">Contato</a>
+        </div>
+        <a href="portal.html" class="bg-gold text-black px-6 py-2 font-bold hover:bg-yellow-700 transition">Área do Cliente</a>
     </nav>
 
-    <!-- WIDGET MERCADO -->
     <div class="bg-black border-y border-gray-800 overflow-hidden relative pt-24">
         <div class="whitespace-nowrap animate-marquee flex gap-12 py-3 text-sm text-gray-400 w-fit">
             <span class="flex items-center gap-2"><span class="text-gold font-bold">IBOV</span> 128.500 <span class="text-emerald">+0.45%</span></span>
@@ -37,7 +37,6 @@
         </div>
     </div>
 
-    <!-- HERO -->
     <section class="relative min-h-screen flex flex-col justify-center items-center text-center p-6 border-b border-gray-800 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop');">
         <div class="absolute inset-0 bg-black/75"></div>
         <div class="relative z-10">
@@ -48,18 +47,6 @@
         </div>
     </section>
 
-    <!-- QUEM SOMOS -->
-    <section class="py-20 px-6 max-w-6xl mx-auto">
-        <h3 class="text-3xl font-serif text-white mb-10 border-l-4 border-gold pl-4">Quem Somos</h3>
-        <p class="max-w-3xl mb-12 text-lg">A A&C Investimentos atua na estruturação de operações financeiras com foco em eficiência, viabilidade e resultado. Não somos um banco, somos uma ponte estratégica entre empresas e as melhores instituições financeiras e fundos.</p>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-6 bg-gray-900 border border-gray-800 rounded"><i data-lucide="shield-check" class="text-gold mb-4"></i><h4 class="font-bold text-white">Estruturação Personalizada</h4></div>
-            <div class="p-6 bg-gray-900 border border-gray-800 rounded"><i data-lucide="landmark" class="text-gold mb-4"></i><h4 class="font-bold text-white">Multi-bancos e Fundos</h4></div>
-            <div class="p-6 bg-gray-900 border border-gray-800 rounded"><i data-lucide="search" class="text-gold mb-4"></i><h4 class="font-bold text-white">Leitura Real de Crédito</h4></div>
-        </div>
-    </section>
-
-    <!-- NÚMEROS E DEPOIMENTOS -->
     <section id="numeros-section" class="bg-gray-900 py-20 px-6">
         <div class="max-w-6xl mx-auto">
             <div class="grid md:grid-cols-3 gap-12 mb-20 text-center">
@@ -72,17 +59,14 @@
                 <div class="bg-dark p-8 border border-gray-800 rounded text-center">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-gold">
                     <p class="italic text-sm mb-4">"A estruturação foi impecável. A A&C transformou nossa gestão financeira."</p>
-                    <h5 class="font-bold text-white">Ricardo Mendes</h5>
                 </div>
                 <div class="bg-dark p-8 border border-gray-800 rounded text-center">
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-gold">
-                    <p class="italic text-sm mb-4">"Profissionalismo raro. Conseguimos o crédito que precisávamos com rapidez."</p>
-                    <h5 class="font-bold text-white">Ana Souza</h5>
+                    <p class="italic text-sm mb-4">"Profissionalismo raro. Conseguimos o crédito com rapidez."</p>
                 </div>
                 <div class="bg-dark p-8 border border-gray-800 rounded text-center">
                     <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-gold">
-                    <p class="italic text-sm mb-4">"A melhor ponte estratégica entre nossa empresa e o mercado financeiro."</p>
-                    <h5 class="font-bold text-white">Carlos Lima</h5>
+                    <p class="italic text-sm mb-4">"A melhor ponte estratégica entre nossa empresa e o mercado."</p>
                 </div>
             </div>
         </div>
