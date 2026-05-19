@@ -7,21 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        gold: '#C5A059',
-                        emerald: '#064E3B',
-                        dark: '#0A0A0A'
-                    }
-                }
-            }
-        }
+        tailwind.config = { theme: { extend: { colors: { gold: '#C5A059', emerald: '#064E3B', dark: '#0A0A0A' } } } }
     </script>
 </head>
 <body class="bg-dark text-gray-300 font-sans selection:bg-gold selection:text-white">
-    <!-- IMAGEM DE FUNDO FIXA -->
+    <!-- FUNDO -->
     <div class="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop');"></div>
     <div class="fixed inset-0 z-0 bg-black/85"></div>
 
@@ -35,32 +25,35 @@
         </nav>
 
         <main class="flex-grow max-w-6xl mx-auto py-20 px-6">
-            <h1 class="text-4xl font-serif text-white mb-12 border-l-4 border-gold pl-4">Nosso Portfólio de Serviços</h1>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Cards com visual Dark -->
-                <div class="bg-gray-900/90 backdrop-blur-sm p-8 border border-gray-800 rounded hover:border-gold transition">
-                    <h4 class="font-bold text-white mb-2">Crédito Empresarial</h4>
-                    <p class="text-sm">Capital de giro, antecipação de recebíveis e cessão de crédito.</p>
-                </div>
-                <div class="bg-gray-900/90 backdrop-blur-sm p-8 border border-gray-800 rounded hover:border-gold transition">
-                    <h4 class="font-bold text-white mb-2">Crédito com Garantia</h4>
-                    <p class="text-sm">Home equity (imóvel) e crédito com garantia de veículo.</p>
-                </div>
-                <div class="bg-gray-900/90 backdrop-blur-sm p-8 border border-gray-800 rounded hover:border-gold transition">
-                    <h4 class="font-bold text-white mb-2">Estruturações</h4>
-                    <p class="text-sm">Operações com FIDC e reestruturação financeira.</p>
-                </div>
-                <div class="bg-gray-900/90 backdrop-blur-sm p-8 border border-gray-800 rounded hover:border-gold transition">
-                    <h4 class="font-bold text-white mb-2">Soluções Complementares</h4>
-                    <p class="text-sm">Financiamentos, consórcios e câmbio (PF e PJ).</p>
-                </div>
+            <h1 class="text-4xl font-serif text-white mb-12 border-l-4 border-gold pl-4">Nossos Serviços</h1>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Lista de Serviços -->
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Financiamento Imobiliário</h4><p class="text-xs">Adquira seu imóvel com facilidade. Condições flexíveis.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Financiamento Imobiliário PJ</h4><p class="text-xs">Adquira seu imóvel com facilidade. Condições flexíveis.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Financiamento de Veículos</h4><p class="text-xs">Condições especiais e parcelas que cabem no seu orçamento.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Financiamento de Veículos PJ</h4><p class="text-xs">Condições especiais e parcelas que cabem no seu orçamento.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Crédito c/ Garantia Veículos</h4><p class="text-xs">Taxas menores e prazos que cabem no seu bolso.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Crédito c/ Garantia Veículos PJ</h4><p class="text-xs">Taxas menores e prazos que cabem no seu bolso.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Home Equity</h4><p class="text-xs">Use seu imóvel como garantia com taxas mais atrativas.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Home Equity PJ</h4><p class="text-xs">Use seu imóvel como garantia com taxas mais atrativas.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Motos - Consórcio</h4><p class="text-xs">Adquira sua moto sem juros.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Motos - Consórcio PJ</h4><p class="text-xs">Adquira sua moto sem juros.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Automóveis - Consórcio</h4><p class="text-xs">Adquira seu automóvel sem juros.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Automóveis - Consórcio PJ</h4><p class="text-xs">Adquira seu automóvel sem juros.</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Imóveis - Consórcio</h4><p class="text-xs">Realize o sonho da casa própria sem juros!</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Imóveis - Consórcio PJ</h4><p class="text-xs">Realize o sonho da casa própria sem juros!</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Capital de giro PJ</h4><p class="text-xs">Soluções para fortalecer seu negócio com facilidade!</p></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">INSS - Port/ Refin</h4></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">INSS Cartões</h4></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">Convênios Públicos</h4></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">INSS Novo</h4></div>
+                <div class="bg-gray-900/90 backdrop-blur-sm p-6 border border-gray-800 rounded hover:border-gold transition"><h4 class="font-bold text-gold mb-2">FGTS - Saque Aniversário</h4></div>
             </div>
         </main>
 
-        <!-- RODAPÉ -->
         <footer class="py-10 text-center border-t border-gray-900 text-xs text-gray-600 bg-black/40">
-            &copy; 2026 Haubitz. Todos os direitos reservados. | Desenvolvido por 
-            <a href="https://wa.me/5514991159546?text=Olá%20eu%20visitei%20o%20site%20A%26C%20Investimentos%20e%20queria%20saber%20como%20faço%20para%20ter%20meu%20próprio%20site" class="text-gold hover:underline">Haubitz</a>
+            &copy; 2026 Haubitz. Todos os direitos reservados. | Desenvolvido por <a href="https://wa.me/5514991159546?text=Olá%20eu%20visitei%20o%20site%20A%26C%20Investimentos%20e%20queria%20saber%20como%20faço%20para%20ter%20meu%20próprio%20site" class="text-gold hover:underline">Haubitz</a>
         </footer>
     </div>
 </body>
