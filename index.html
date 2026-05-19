@@ -7,10 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-        .animate-marquee { animation: marquee 30s linear infinite; }
-    </style>
     <script>
         tailwind.config = { theme: { extend: { colors: { gold: '#C5A059', emerald: '#064E3B', dark: '#0A0A0A' }, fontFamily: { serif:['Playfair Display', 'serif'], sans:['Inter', 'sans-serif'] } } } }
     </script>
@@ -25,18 +21,6 @@
         </div>
         <a href="portal.html" class="bg-gold text-black px-6 py-2 font-bold hover:bg-yellow-700 transition">Área do Cliente</a>
     </nav>
-
-    <!-- WIDGET DE MERCADO EM LOOP CONTÍNUO -->
-    <div class="bg-black border-y border-gray-800 overflow-hidden relative pt-24">
-        <div class="whitespace-nowrap animate-marquee flex gap-12 py-3 text-sm text-gray-400 w-fit">
-            <span class="flex items-center gap-2"><span class="text-gold font-bold">IBOV</span> 128.500 <span class="text-emerald">+0.45%</span></span>
-            <span class="flex items-center gap-2"><span class="text-gold font-bold">PETR4</span> 45.47 <span class="text-emerald">+1.04%</span></span>
-            <span class="flex items-center gap-2"><span class="text-gold font-bold">VALE3</span> 83.50 <span class="text-emerald">+0.76%</span></span>
-            <span class="flex items-center gap-2"><span class="text-gold font-bold">ITUB4</span> 39.70 <span class="text-red-500">-1.73%</span></span>
-            <span class="flex items-center gap-2"><span class="text-gold font-bold">IBOV</span> 128.500 <span class="text-emerald">+0.45%</span></span>
-            <span class="flex items-center gap-2"><span class="text-gold font-bold">PETR4</span> 45.47 <span class="text-emerald">+1.04%</span></span>
-        </div>
-    </div>
 
     <!-- HERO SECTION -->
     <section class="relative min-h-screen flex flex-col justify-center items-center text-center p-6 border-b border-gray-800 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop');">
