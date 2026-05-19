@@ -15,8 +15,7 @@
         .menu { display:flex; flex-direction:column; gap:10px; }
         .menu a { text-decoration:none; color:#f3f4f6; padding:14px; border-radius:8px; transition:0.3s; border: 1px solid transparent; }
         .menu a:hover { border-color: #C5A059; color: #C5A059; }
-        
-        /* Botão Login - Ajustado */
+        /* Estilo do Botão Login */
         .btn-login { background: #C5A059 !important; color: black !important; font-weight: bold; text-align: center; margin-top: 10px; cursor: pointer; }
 
         .main { flex:1; display:flex; flex-direction:column; }
@@ -44,11 +43,8 @@
         <a href="index.html">🏠 Início</a>
         <a href="quem-somos.html">👤 Quem Somos</a>
         <a href="contato.html">📞 Contato</a>
-        
-        <!-- Botão Login com a URL específica solicitada -->
-        <a href="https://app.teddy360.com.br/#/store/5032d093-03b4-42d0-b847-e2e5575bfb6f/v2/login" target="_blank" class="btn-login">
-            🔑 Fazer Login
-        </a>
+        <!-- Botão Login: Abre em nova aba para garantir o carregamento do modal -->
+        <a href="https://app.teddy360.com.br/#/store/5032d093-03b4-42d0-b847-e2e5575bfb6f/v2" target="_blank" class="btn-login">🔑 Fazer Login</a>
     </div>
 </div>
 
@@ -59,6 +55,7 @@
     </div>
     <div class="iframe-container">
         <div class="iframe-wrapper">
+            <!-- Iframe principal com a loja -->
             <iframe src="https://app.teddy360.com.br/#/store/5032d093-03b4-42d0-b847-e2e5575bfb6f/v2" onload="hideLoader()"></iframe>
         </div>
     </div>
