@@ -1,275 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Financeira | A&C Investimentos</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif; }
+        body { background:#0A0A0A; overflow:hidden; display:flex; height:100vh; color: #d1d5db; }
 
-<title>A&C Investimentos Platform</title>
+        /* SIDEBAR PREMIUM */
+        .sidebar { width:260px; background:#0A0A0A; border-right:1px solid #1f2937; display:flex; flex-direction:column; padding:30px 20px; }
+        .logo { color:#C5A059; font-size:28px; font-weight:bold; margin-bottom:10px; font-family: 'Playfair Display', serif; }
+        .subtitle { color:#9ca3af; font-size:12px; margin-bottom:40px; text-transform: uppercase; letter-spacing: 2px; }
+        .menu { display:flex; flex-direction:column; gap:10px; }
+        .menu a { text-decoration:none; color:#f3f4f6; padding:14px; border-radius:8px; transition:0.3s; border: 1px solid transparent; }
+        .menu a:hover { border-color: #C5A059; color: #C5A059; }
 
-<style>
+        .main { flex:1; display:flex; flex-direction:column; }
+        .topbar { height:70px; background:#0A0A0A; border-bottom:1px solid #1f2937; display:flex; align-items:center; justify-content:space-between; padding:0 30px; }
+        .iframe-container { flex:1; padding:20px; background:#0A0A0A; }
+        .iframe-wrapper { width:100%; height:100%; border-radius:12px; overflow:hidden; border:1px solid #1f2937; background:black; }
+        iframe { width:100%; height:100%; border:none; }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
-
-body{
-background:#0b1120;
-overflow:hidden;
-display:flex;
-height:100vh;
-}
-
-/* SIDEBAR */
-
-.sidebar{
-width:260px;
-background:#111827;
-border-right:1px solid #1f2937;
-display:flex;
-flex-direction:column;
-padding:30px 20px;
-}
-
-.logo{
-color:#d4af37;
-font-size:28px;
-font-weight:bold;
-margin-bottom:40px;
-}
-
-.subtitle{
-color:#9ca3af;
-font-size:13px;
-margin-top:-10px;
-margin-bottom:30px;
-}
-
-.menu{
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-.menu a{
-text-decoration:none;
-color:#f3f4f6;
-padding:14px;
-border-radius:12px;
-transition:0.3s;
-background:#1f2937;
-}
-
-.menu a:hover{
-background:#d4af37;
-color:black;
-}
-
-/* MAIN */
-
-.main{
-flex:1;
-display:flex;
-flex-direction:column;
-}
-
-/* TOPBAR */
-
-.topbar{
-height:70px;
-background:#0f172a;
-border-bottom:1px solid #1f2937;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 30px;
-}
-
-.topbar-title{
-color:white;
-font-size:18px;
-font-weight:bold;
-}
-
-.profile{
-display:flex;
-align-items:center;
-gap:12px;
-color:white;
-}
-
-.avatar{
-width:40px;
-height:40px;
-background:#d4af37;
-border-radius:50%;
-}
-
-/* IFRAME AREA */
-
-.iframe-container{
-flex:1;
-padding:20px;
-background:#0b1120;
-}
-
-.iframe-wrapper{
-width:100%;
-height:100%;
-border-radius:20px;
-overflow:hidden;
-border:2px solid #1f2937;
-box-shadow:0 0 30px rgba(0,0,0,0.4);
-background:black;
-}
-
-iframe{
-width:100%;
-height:100%;
-border:none;
-}
-
-/* LOADING */
-
-.loader{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:#0b1120;
-display:flex;
-align-items:center;
-justify-content:center;
-z-index:9999;
-flex-direction:column;
-color:white;
-transition:1s;
-}
-
-.spinner{
-width:60px;
-height:60px;
-border:5px solid #1f2937;
-border-top:5px solid #d4af37;
-border-radius:50%;
-animation:spin 1s linear infinite;
-margin-bottom:20px;
-}
-
-@keyframes spin{
-100%{
-transform:rotate(360deg);
-}
-}
-
-</style>
+        .loader { position:fixed; top:0; left:0; width:100%; height:100%; background:#0A0A0A; display:flex; align-items:center; justify-content:center; z-index:9999; flex-direction:column; color:white; transition:1s; }
+        .spinner { width:50px; height:50px; border:4px solid #1f2937; border-top:4px solid #C5A059; border-radius:50%; animation:spin 1s linear infinite; margin-bottom:20px; }
+        @keyframes spin { 100% { transform:rotate(360deg); } }
+    </style>
 </head>
-
 <body>
 
 <div class="loader" id="loader">
-
-<div class="spinner"></div>
-
-<h2>A&C Investimentos</h2>
-
-<p>Carregando plataforma...</p>
-
+    <div class="spinner"></div>
+    <h2>A&C Investimentos</h2>
 </div>
-
-<!-- SIDEBAR -->
 
 <div class="sidebar">
-
-<div class="logo">
-A&C
+    <div class="logo">A&C</div>
+    <div class="subtitle">Investimentos</div>
+    <div class="menu">
+        <a href="index.html">🏠 Início</a>
+        <a href="quem-somos.html">👤 Quem Somos</a>
+        <a href="contato.html">📞 Contato</a>
+    </div>
 </div>
-
-<div class="subtitle">
-INVESTIMENTOS
-</div>
-
-<div class="menu">
-
-<a href="#">
-🏠 Dashboard
-</a>
-
-<a href="#">
-💰 Investimentos
-</a>
-
-<a href="#">
-🏦 Crédito
-</a>
-
-<a href="#">
-📈 Produtos
-</a>
-
-<a href="#">
-📞 Suporte
-</a>
-
-<a href="/">
-🌐 Site Principal
-</a>
-
-</div>
-
-</div>
-
-<!-- MAIN -->
 
 <div class="main">
-
-<div class="topbar">
-
-<div class="topbar-title">
-Plataforma Financeira
-</div>
-
-<div class="profile">
-
-<span>Cliente A&C</span>
-
-<div class="avatar"></div>
-
-</div>
-
-</div>
-
-<div class="iframe-container">
-
-<div class="iframe-wrapper">
-
-<iframe
-src="https://app.teddy360.com.br/#/store/5032d093-03b4-42d0-b847-e2e5575bfb6f/v2"
-onload="hideLoader()">
-</iframe>
-
-</div>
-
-</div>
-
+    <div class="topbar">
+        <div style="font-weight: bold; color: #C5A059;">Plataforma Financeira</div>
+        <div style="font-size: 14px;">Bem-vindo, Cliente A&C</div>
+    </div>
+    <div class="iframe-container">
+        <div class="iframe-wrapper">
+            <iframe src="https://app.teddy360.com.br/#/store/5032d093-03b4-42d0-b847-e2e5575bfb6f/v2" onload="hideLoader()"></iframe>
+        </div>
+    </div>
 </div>
 
 <script>
-
-function hideLoader(){
-setTimeout(() => {
-document.getElementById('loader').style.opacity = '0';
-
-setTimeout(() => {
-document.getElementById('loader').style.display = 'none';
-},1000);
-
-},1500);
-}
-
+    function hideLoader(){
+        setTimeout(() => {
+            document.getElementById('loader').style.opacity = '0';
+            setTimeout(() => { document.getElementById('loader').style.display = 'none'; }, 1000);
+        }, 1000);
+    }
 </script>
 
 </body>
